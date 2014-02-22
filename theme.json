@@ -1,0 +1,9 @@
+{
+  "id": "nodebb-theme-blacknred",
+  "name": "Black n'Red Theme for NodeBB",
+  "description": "A dark theme for NodeBB.",
+  "url": "https://www.github.com/Toolito/nodebb-theme-blacknred",
+  "screenshot": "screenshot.png",
+  "templates": "templates",
+  "staticDir": "static"
+}
