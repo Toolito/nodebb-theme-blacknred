@@ -1,0 +1,24 @@
+{
+  "name": "nodebb-theme-blacknred",
+  "version": "0.0.1",
+  "description": "A dark theme for NodeBB",
+  "main": "theme.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toolito/nodebb-theme-blacknred.git"
+  },
+  "keywords": [
+    "theme",
+    "nodebb",
+    "blacknred"
+  ],
+  "author": "Toolito",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Toolito/nodebb-theme-blacknred/issues"
+  },
+  "homepage": "https://github.com/Toolito/nodebb-theme-blacknred"
+}
