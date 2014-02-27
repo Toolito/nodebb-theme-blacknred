@@ -1,4 +1,5 @@
 {
+	"id": "nodebb-theme-blacknred",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{

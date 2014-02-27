@@ -10,6 +10,7 @@ $('document').ready(function() {
         if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           var masonry = new Masonry('.row.home > div', {
             itemSelector: '.category-item',
+            columnWidth: '.category-item',
           });
 
           $('.row.home > div').imagesLoaded(function() {
