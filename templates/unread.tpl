@@ -18,15 +18,15 @@
 		<div class="col-md-12">
 			<ul id="topics-container" data-nextstart="{nextStart}">
 			<!-- BEGIN topics -->
-			<li class="category-item <!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted -->" itemprop="itemListElement">
+			<li class="category-item<!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted -->" itemprop="itemListElement" data-tid="{topics.tid}">
 				<meta itemprop="name" content="{topics.title}">
 				<div class="category-item">
 					<div class="category-body">
 						<div class="row">
 							<div class="col-md-8 col-sm-9">
 								<div class="category-profile-pic">
-									<a href="{relative_path}/user/{topics.userslug}">
-										<img src="{topics.picture}" alt="{topics.username}" class="profile-image user-img" title="{topics.username}">
+									<a href="{relative_path}/user/{topics.user.userslug}">
+										<img src="{topics.user.picture}" alt="{topics.user.username}" class="profile-image user-img" title="{topics.user.username}">
 									</a>
 								</div>
 								<div class="category-text">

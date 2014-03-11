@@ -7,6 +7,7 @@
 <input type="hidden" template-variable="pinned" value="{pinned}" />
 <input type="hidden" template-variable="topic_name" value="{title}" />
 <input type="hidden" template-variable="postcount" value="{postcount}" />
+<input type="hidden" template-variable="viewcount" value="{viewcount}" />
 
 
 <div class="topic">
@@ -79,7 +80,7 @@
 									</a>
 									<ul class="dropdown-menu" role="menu" aria-labelledby="postMenu_{posts.pid}">
 										<li role="presentation">
-											<a role="menuitem" tabindex="-1" class="follow hide" title="Be notified of new replies in this topic">[[topic:watch]] <i class="fa fa-eye"></i></a>
+											<a href="#" role="menuitem" tabindex="-1" class="follow hide" title="Be notified of new replies in this topic">[[topic:watch]] <i class="fa fa-eye"></i></a>
 										</li>
 										<li role="presentation">
 											<a role="menuitem" tabindex="-1" data-favourited="{posts.favourited}" class="favourite">
@@ -112,11 +113,11 @@
 								</div>
 								&bull;
 								<a href="#" class="upvote <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
-									<i class="fa fa-plus"></i>
+									<i class="fa fa-chevron-up"></i>
 								</a>
 								<span class="votes" data-votes="{posts.votes}">{posts.votes}</span>
 								<a href="#" class="downvote <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
-									<i class="fa fa-minus"></i>
+									<i class="fa fa-chevron-down"></i>
 								</a>
 
 								<!-- BEGIN custom_profile_info -->
@@ -290,5 +291,6 @@
 			</div>
 		</div>
 	</div>
-
 </div>
+
+<!-- IMPORT partials/noscript/paginator.tpl -->
