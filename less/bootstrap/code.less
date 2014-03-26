@@ -3,53 +3,51 @@
 // --------------------------------------------------
 
 
-
-code,kbd,pre,samp{
-  font-family:Menlo,Monaco,Consolas,"Courier New",monospace
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: @font-family-monospace;
 }
 
-code{
-  padding:2px 4px;
-  font-size:90%;
-  color:#c7254e;
-  background-color:#f9f2f4;
-  white-space:nowrap;
-  border-radius:4px
+// Inline code
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: @code-color;
+  background-color: @code-bg;
+  white-space: nowrap;
+  border-radius: @border-radius-base;
 }
 
-kbd{
-  padding:2px 4px;
-  font-size:90%;
-  color:#ffffff;
-  background-color:#333333;
-  border-radius:3px;
-  box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25)
+// Blocks of code
+pre {
+  display: block;
+  padding: ((@line-height-computed - 1) / 2);
+  margin: 0 0 (@line-height-computed / 2);
+  font-size: (@font-size-base - 1); // 14px to 13px
+  line-height: @line-height-base;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: @pre-color;
+  background-color: @pre-bg;
+  border: 1px solid @pre-border-color;
+  border-radius: @border-radius-base;
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
-pre{
-  display:block;
-  padding:9.5px;
-  margin:0 0 10px;
-  font-size:13px;
-  line-height:1.42857143;
-  word-break:break-all;
-  word-wrap:break-word;
-  color:#282828;
-  background-color:@gray-dark;
-  border:1px solid #B40404;
-  border-radius:4px
-}
-
-pre code{
-  padding:0;
-  font-size:inherit;
-  color:inherit;
-  white-space:pre-wrap;
-  background-color:transparent;
-  border-radius:0
-}
-
-.pre-scrollable{
-  max-height:340px;
-  overflow-y:scroll
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: @pre-scrollable-max-height;
+  overflow-y: scroll;
 }

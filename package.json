@@ -15,10 +15,20 @@
     "nodebb",
     "blacknred"
   ],
-  "author": "Toolito",
+  "author": {
+    "name": "Toolito"
+  },
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/Toolito/nodebb-theme-blacknred/issues"
   },
-  "homepage": "https://github.com/Toolito/nodebb-theme-blacknred"
+  "homepage": "https://github.com/Toolito/nodebb-theme-blacknred",
+  "readme": "nodebb-theme-blacknred\r\n======================\r\n\r\nA dark theme for NodeBB.\r\n",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-theme-blacknred@0.0.8",
+  "dist": {
+    "shasum": "44107a37005e12288ab27c47f93fe951cb45f457"
+  },
+  "_from": "nodebb-theme-blacknred@",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-blacknred/-/nodebb-theme-blacknred-0.0.8.tgz"
 }
