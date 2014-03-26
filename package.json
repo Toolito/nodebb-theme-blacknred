@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-blacknred",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "A dark theme for NodeBB",
   "main": "theme.less",
   "scripts": {
